@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Website</title>
+
+
+    <style>
+        .container {
+            display: flex;
+            gap:20px;
+        }
+        .box {
+            background-color: aquamarine;
+            border-radius:20px;
+            padding:20px;
+        }
+
+        .container2 {
+            display: flex;
+            flex-wrap: wrap;
+            gap:10px;
+            margin-top:40px;
+        }
+
+        .item {
+            width:200px;
+            height: 100px;
+            background-color: aqua;
+            border:1px solid green;
+        }
+
+
+        @media screen and (max-width: 576px) {
+            .container {
+                flex-direction: column;
+            }
+        }
+    </style>
+
+
+
+
+</head>
+<body>
+
+    <h1>Flexible Flex</h1>
+
+    <div class="container">
+        <div class="box">
+            <h2>This is a Heading</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum qui sapiente possimus fugiat temporibus voluptate, provident, in reprehenderit quia repudiandae veniam facere sint eligendi explicabo excepturi dolores officiis minus earum.</p>
+        </div>
+        <div class="box">
+            <h2>This is a Heading</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam quos a quasi voluptas quibusdam ea quidem, iste beatae doloremque nisi hic cumque commodi ipsum magni voluptatibus dicta, repellendus laboriosam voluptatum!</p>
+        </div>
+
+    </div>
+
+
+    <div class="container2">
+        <div class="item">Item - 1</div>
+        <div class="item">Item - 2</div>
+        <div class="item">Item - 3</div>
+        <div class="item">Item - 4</div>
+        <div class="item">Item - 5</div>
+        <div class="item">Item - 6</div>
+        <div class="item">Item - 7</div>
+        <div class="item">Item - 8</div>
+        <div class="item">Item - 9</div>
+        <div class="item">Item - 10</div>
+    </div>
+    
+</body>
+</html>
